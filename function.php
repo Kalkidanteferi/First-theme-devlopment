@@ -10,6 +10,11 @@ add_action("wp_enqueue_scripts", "simpletheme_style" );
 
 
 
+register_sidebar(array (
 
+     "name" => __("sidebar1")
+
+
+))
 
 ?>

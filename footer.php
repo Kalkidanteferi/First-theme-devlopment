@@ -1,7 +1,7 @@
 </div>
 <footer>
 
-footer goes here ..
+footer goes here is ..
 
 </footer>
 
