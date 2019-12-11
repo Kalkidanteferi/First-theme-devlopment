@@ -6,8 +6,13 @@
      <?php wp_head(); ?>
 </head>
 <body>
-<nav>
-    <h1>logo</h1>
+<header>
+    <a href = "http://localhost/wp/"><h1>site logo </h1></a>
+</header>
 
+<nav>
+
+<?php wp_nav_menu(array('')); ?>
 </nav>
+
 <div class="container">
