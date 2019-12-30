@@ -48,6 +48,21 @@
 	<span class="navbar-toggler-icon">
 	</span>
 	</button>
+	<?php
+	wp_nav_menu([
+		'menu'  => 'primary',
+		'theme_location'  => 'primary',
+		'container'   => 'div',
+		'container'   =>  'bs4navbar',
+		'container_class'  =>  'collapse navbar-collapse',
+		'menu_id'   =>  'main-menu',
+		'menu_class'  =>  'navbar-nav ml-auto',
+		'depth'   =>  2,
+		'fallback_cb'  =>  'bs4navwalker: :fallback',
+		//'walker'   => new bs4navwalker()
+	]);
+	?>
+	</nav>
 	</header>
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content row">

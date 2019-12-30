@@ -13,12 +13,12 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer row">
+		<div class="site-info col-md-12">
 		<a href="<?php echo esc_url( __( 'https://wordpress.org/', '' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'kalkidan' ), 'Django' );
+				printf( esc_html__( 'Proudly Powered by %s', 'Kalkidan' ), 'wordpress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
