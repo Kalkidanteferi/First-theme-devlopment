@@ -46,6 +46,6 @@ get_header();
 	</div><!-- #primary -->
 
 <div class = "col-md-4">
-<?php get_sidebar(); ?>
+    <?php get_sidebar(); ?>
 </div>
-<?php get_footer(); 
+    <?php get_footer(); 
