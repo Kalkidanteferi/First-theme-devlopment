@@ -14,18 +14,18 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
-<div id="page" class="site container">
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kalkidan' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<nav id="menu" class = "navbar-expand-md navbar-light" role="navigation">
-		<div class="site-branding navbar-brand">
+		<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -42,27 +42,31 @@
 				?>
 				<p class="site-description"><?php echo $kalkidan_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div>
-    <button class="navbar-toggle navbar-toggler-right" type="button" data-toggle="collapse"
-	data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-lable="toggle navigation">
-	<span class="navbar-toggler-icon">
-	</span>
-	</button>
-	<?php
-	wp_nav_menu([
-		'menu'  => 'primary',
-		'theme_location'  => 'primary',
-		'container'   => 'div',
-		'container'   =>  'bs4navbar',
-		'container_class'  =>  'collapse navbar-collapse',
-		'menu_id'   =>  'main-menu',
-		'menu_class'  =>  'navbar-nav ml-auto',
-		'depth'   =>  2,
-		'fallback_cb'  =>  'bs4navwalker: :fallback',
-		//'walker'   => new bs4navwalker()
-	]);
-	?>
-	</nav>
-	</header>
+		</div><!-- .site-branding -->
 
-	<div id="content" class="site-content row">
+
+<nav id="site-navigation"  class="navbar navbar-expand-md ">
+    <a class="navbar-brand" href="#">
+        <?php bloginfo('name'); ?>
+    </a>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kalkidan' ); ?></button>
+
+
+<?php
+            wp_nav_menu([
+            'menu'            => 'primary-menu',
+            'theme_location'  => 'menu-1',
+            'container'       => 'div',
+            'container_id'    => 'navbarCollapse',
+            'container_class' => 'collapse navbar-collapse',
+            'menu_id'         => false,
+            'menu_class'      => 'navbar-nav mr-auto',
+            'depth'           => 0,
+            'fallback_cb'     => 'functions::fallback',
+            'walker'          => new kal()
+            ]);
+        ?>
+		</nav>
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">

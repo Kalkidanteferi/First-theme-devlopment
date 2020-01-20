@@ -246,7 +246,7 @@ ul.products li.product .button {
 }
 
 .stock.out-of-stock {
-	color: purple;
+	color: #e2401c;
 }
 
 /**
