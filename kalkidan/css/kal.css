@@ -1,5 +1,25 @@
 #colophon{
 
-background-color:blanchedalmond;
+background-color:rgb(12, 11, 9);
 
+}
+#main{
+    background-color: #ccc;
+}
+#secondary{
+    background-color: #bbbb;
+        float: left;
+        width: 500px;
+        height: 705px;
+        margin: 100px;
+        border: 3px dotted #cccc;  
+    
+}
+#primary{
+    background-color: rgba(146, 22, 22, 0.733);
+        float: left;
+        width: 500px;
+        height: 705px;
+        margin: 100px;
+        border: 3px dotted #cccc;  
 }
