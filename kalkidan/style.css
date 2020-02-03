@@ -395,7 +395,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: black;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -474,7 +474,7 @@ body {
 }
 
 hr {
-	background-color: #ccc;
+	background-color:yellow;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;

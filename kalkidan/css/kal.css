@@ -1,6 +1,11 @@
 #colophon{
 
-background-color:rgb(12, 11, 9);
+background-color: #eee;
+background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    font-style: italic;
+    text-decoration-color: khaki;
 
 }
 #main{
@@ -10,16 +15,27 @@ background-color:rgb(12, 11, 9);
     background-color: #bbbb;
         float: left;
         width: 500px;
-        height: 705px;
+        height: 900px;
         margin: 100px;
-        border: 3px dotted #cccc;  
-    
+        border: 3px dotted rgba(146, 22, 22, 0.733);  
+        
 }
 #primary{
-    background-color: rgba(146, 22, 22, 0.733);
-        float: left;
-        width: 500px;
-        height: 705px;
+    background-color: black;
+        float: right;
+        width: 900px;
+        height: 700px;
         margin: 100px;
         border: 3px dotted #cccc;  
+}
+#content{
+    background-color: goldenrod;
+}
+#masthead{
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    font-style: italic;
+    text-decoration-color: khaki;
+
 }
